@@ -32,7 +32,7 @@ http.use((req, res, next) => {
 http.use(BodyParser.json())
 
 http.use("/permissions", require(`${__dirname}/permissions`))
-http.use("/user", require(`${__dirname}/user`))
+http.use("/admin", require(`${__dirname}/user`))
 
 http.use((err, req, res, next) => {
     console.log("UNEXPECTED-ERROR: ", err.stack)
