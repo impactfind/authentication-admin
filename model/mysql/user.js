@@ -39,16 +39,8 @@ module.exports = function($, DataTypes) {
     }, {
         timestamps: false,
         underscored: true,
-        tableName: "user",
-        indexes: [
-            {
-                unique: true,
-                fields: ["username"]
-            },
-            {
-                fields: ["created_at"]
-            }
-        ],
+        tableName: "admin",
+
         hooks: {
             beforeCreate(user, options) {
                 user.id = RandomString.generate({
