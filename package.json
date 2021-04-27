@@ -26,7 +26,7 @@
     "qgrail-broker": "0.0.1",
     "ramda": "^0.26.1",
     "randomstring": "^1.1.5",
-    "redis": "^2.8.0",
+    "redis": "^3.1.1",
     "sequelize": "^6.0.0"
   }
 }
